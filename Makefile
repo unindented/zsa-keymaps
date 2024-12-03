@@ -3,7 +3,7 @@
 MY_KEYBOARD ?= voyager
 # Your keymap ID. Can be found in the URL of your layout in Oryx:
 # https://configure.zsa.io/voyager/layouts/<MY_KEYMAP>/latest
-MY_KEYMAP ?= v9REb
+MY_KEYMAP ?= JqNpm
 
 # -----------------------------------------------------------------------------
 
