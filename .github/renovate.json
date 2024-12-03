@@ -1,6 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
-  ]
+    "config:best-practices",
+    ":disableRateLimiting",
+    ":noUnscheduledUpdates",
+    ":automergeAll"
+  ],
+  "timezone": "America/Los_Angeles",
+  "schedule": ["after 8pm every weekday", "every weekend"],
+  "git-submodules": {
+    "enabled": true
+  }
 }
