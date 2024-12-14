@@ -1637,14 +1637,14 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
 <rect rx="4" ry="4" x="-30" y="-34" width="60" height="60" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">MEDIA</tspan><tspan x="0" dy="1.2em">STOP</tspan>
+<tspan x="0" dy="-1.2em">MEDIA</tspan><tspan x="0" dy="1.2em">PLAY</tspan><tspan x="0" dy="1.2em">PAUSE</tspan>
 </text>
 </g>
 <g transform="translate(950, 190)" class="key keypos-32">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
 <rect rx="4" ry="4" x="-30" y="-34" width="60" height="60" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">MEDIA</tspan><tspan x="0" dy="1.2em">PLAY</tspan><tspan x="0" dy="1.2em">PAUSE</tspan>
+<tspan x="0" dy="-0.6em">MEDIA</tspan><tspan x="0" dy="1.2em">STOP</tspan>
 </text>
 </g>
 <g transform="translate(1026, 209)" class="key keypos-33">
