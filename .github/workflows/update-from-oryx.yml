@@ -34,3 +34,5 @@ jobs:
   build:
     needs: update-from-oryx
     uses: ./.github/workflows/build.yml
+    with:
+      create_release: true
