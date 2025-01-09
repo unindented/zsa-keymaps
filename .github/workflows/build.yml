@@ -5,6 +5,15 @@ on:
     branches-ignore:
       - "!*-oryx"
   workflow_call:
+    inputs:
+      create_release:
+        required: false
+        type: boolean
+  workflow_dispatch:
+    inputs:
+      create_release:
+        required: false
+        type: boolean
 
 permissions:
   contents: write
@@ -51,6 +60,7 @@ jobs:
       - name: Create release
         env:
           GITHUB_TOKEN: ${{ github.token }}
+        if: ${{ inputs.create_release }}
         run: |
           gh release create "${{ steps.env.outputs.timestamp }}" \
             --target "${{ github.ref }}" \
