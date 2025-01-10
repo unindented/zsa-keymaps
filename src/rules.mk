@@ -14,3 +14,4 @@ CAPS_WORD_ENABLE = yes
 # Custom stuff
 
 KEY_OVERRIDE_ENABLE = yes
+SRC += features/achordion.c

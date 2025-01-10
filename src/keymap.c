@@ -1,7 +1,23 @@
 #include QMK_KEYBOARD_H
 #include "version.h"
+#include "features/achordion.h"
 #define MOON_LED_LEVEL LED_LEVEL
 #define ML_SAFE_RANGE SAFE_RANGE
+
+#ifdef CONSOLE_ENABLE
+#define DEBUG_KEYRECORD(prefix, keycode, record) \
+  uprintf("%s kc: 0x%04X, col: %2u, row: %2u, pressed: %u, time: %5u, int: %u, count: %u\n", \
+    prefix, \
+    keycode, \
+    record->event.key.col, \
+    record->event.key.row, \
+    record->event.pressed, \
+    record->event.time, \
+    record->tap.interrupted, \
+    record->tap.count)
+#else
+#define DEBUG_KEYRECORD(prefix, keycode, record)
+#endif
 
 enum custom_keycodes {
   RGB_SLD = ML_SAFE_RANGE,
@@ -137,6 +153,10 @@ bool rgb_matrix_indicators_user(void) {
 }
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+  DEBUG_KEYRECORD("process_record_user ---", keycode, record);
+
+  if (!process_achordion(keycode, record)) { return false; }
+
   switch (keycode) {
     case ST_MACRO_0:
     if (record->event.pressed) {
@@ -324,6 +344,53 @@ tap_dance_action_t tap_dance_actions[] = {
 
 
 // Custom stuff
+
+void matrix_scan_user(void) {
+  achordion_task();
+}
+
+bool achordion_chord(uint16_t tap_hold_keycode,
+                     keyrecord_t* tap_hold_record,
+                     uint16_t other_keycode,
+                     keyrecord_t* other_record) {
+  DEBUG_KEYRECORD("achordion_chord - tap_hold ---", tap_hold_keycode, tap_hold_record);
+  DEBUG_KEYRECORD("achordion_chord - other    ---", other_keycode, other_record);
+
+  const uint8_t tap_hold_row = tap_hold_record->event.key.row;
+  const uint8_t tap_hold_col = tap_hold_record->event.key.col;
+  const uint8_t other_row = other_record->event.key.row;
+  const uint8_t other_col = other_record->event.key.col;
+
+  // Only apply opposite-hands rule if both keys are in the range where my alphas are.
+  const bool tap_hold_in_left_range = (tap_hold_row >= 1 && tap_hold_row <= 4 && tap_hold_col >= 2 && tap_hold_col <= 6);
+  const bool tap_hold_in_right_range = (tap_hold_row >= 7 && tap_hold_row <= 10 && tap_hold_col >= 0 && tap_hold_col <= 4);
+  const bool other_in_left_range = (other_row >= 1 && other_row <= 4 && other_col >= 2 && other_col <= 6);
+  const bool other_in_right_range = (other_row >= 7 && other_row <= 10 && other_col >= 0 && other_col <= 4);
+
+  if (!tap_hold_in_left_range && !tap_hold_in_right_range) { return true; }
+  if (!other_in_left_range && !other_in_right_range) { return true; }
+
+  return achordion_opposite_hands(tap_hold_record, other_record);
+}
+
+bool achordion_eager_mod(uint8_t mod) {
+  switch (mod) {
+    // Eagerly apply some mods to work better with mouse.
+    case MOD_LCTL:
+    case MOD_LALT:
+    case MOD_LGUI:
+    case MOD_LSFT:
+      return true;
+
+    default:
+      return false;
+  }
+}
+
+uint16_t achordion_timeout(uint16_t tap_hold_keycode) {
+  // Lower timeout from 1 second to 800 ms.
+  return 800;
+}
 
 const key_override_t shift_bspc_del_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_BSPC, KC_DEL);
 
