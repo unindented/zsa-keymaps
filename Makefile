@@ -90,7 +90,7 @@ $(BUILT_KEYMAP_BIN) $(BUILT_KEYMAP_JSON) $(BUILT_KEYBOARD_JSON) &: $(REV_META_JS
 			&& rm -rf '$(QMK_KEYMAP_DIR)' \
 			&& cp -r '$(SOURCE_DIR)' '$(QMK_KEYMAP_DIR)' \
 			&& cd '$(QMK_DIR)' \
-			&& qmk setup -y -b firmware$(REV_META_FIRMWARE) zsa/qmk_firmware \
+			&& qmk setup -y -b 'firmware$(REV_META_FIRMWARE)' zsa/qmk_firmware \
 			&& qmk compile -km '$(MY_KEYMAP)' -kb '$(QMK_MAKE_KEYBOARD)' \
 			&& mv '$(QMK_MAKE_TARGET_NORMALIZED).bin' '../$(BUILT_KEYMAP_BIN)' \
 			&& qmk c2json -km '$(MY_KEYMAP)' -kb '$(QMK_MAKE_KEYBOARD)' --no-cpp -o '../$(BUILT_KEYMAP_JSON)' \
