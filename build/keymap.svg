@@ -207,37 +207,27 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(114, 152)" class="key keypos-13">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
 <rect rx="4" ry="4" x="-30" y="-34" width="60" height="60" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">TD(</tspan><tspan x="0" dy="1.2em">DANCE</tspan><tspan x="0" dy="1.2em">0)</tspan>
-</text>
+<text x="0" y="-4" class="key tap">Q</text>
 </g>
 <g transform="translate(190, 133)" class="key keypos-14">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
 <rect rx="4" ry="4" x="-30" y="-34" width="60" height="60" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">TD(</tspan><tspan x="0" dy="1.2em">DANCE</tspan><tspan x="0" dy="1.2em">1)</tspan>
-</text>
+<text x="0" y="-4" class="key tap">W</text>
 </g>
 <g transform="translate(266, 114)" class="key keypos-15">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
 <rect rx="4" ry="4" x="-30" y="-34" width="60" height="60" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">TD(</tspan><tspan x="0" dy="1.2em">DANCE</tspan><tspan x="0" dy="1.2em">2)</tspan>
-</text>
+<text x="0" y="-4" class="key tap">E</text>
 </g>
 <g transform="translate(342, 133)" class="key keypos-16">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
 <rect rx="4" ry="4" x="-30" y="-34" width="60" height="60" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">TD(</tspan><tspan x="0" dy="1.2em">DANCE</tspan><tspan x="0" dy="1.2em">3)</tspan>
-</text>
+<text x="0" y="-4" class="key tap">R</text>
 </g>
 <g transform="translate(418, 152)" class="key keypos-17">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
 <rect rx="4" ry="4" x="-30" y="-34" width="60" height="60" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">TD(</tspan><tspan x="0" dy="1.2em">DANCE</tspan><tspan x="0" dy="1.2em">4)</tspan>
-</text>
+<text x="0" y="-4" class="key tap">T</text>
 </g>
 <g transform="translate(798, 152)" class="key keypos-18">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
@@ -278,37 +268,31 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(114, 228)" class="key keypos-25">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
 <rect rx="4" ry="4" x="-30" y="-34" width="60" height="60" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">TD(</tspan><tspan x="0" dy="1.2em">DANCE</tspan><tspan x="0" dy="1.2em">5)</tspan>
-</text>
+<text x="0" y="-4" class="key tap">A</text>
+<text x="0" y="34" class="key hold"><tspan style="font-size: 88%">MOD_LCTL</tspan></text>
 </g>
 <g transform="translate(190, 209)" class="key keypos-26">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
 <rect rx="4" ry="4" x="-30" y="-34" width="60" height="60" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">TD(</tspan><tspan x="0" dy="1.2em">DANCE</tspan><tspan x="0" dy="1.2em">6)</tspan>
-</text>
+<text x="0" y="-4" class="key tap">S</text>
+<text x="0" y="34" class="key hold"><tspan style="font-size: 88%">MOD_LALT</tspan></text>
 </g>
 <g transform="translate(266, 190)" class="key keypos-27">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
 <rect rx="4" ry="4" x="-30" y="-34" width="60" height="60" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">TD(</tspan><tspan x="0" dy="1.2em">DANCE</tspan><tspan x="0" dy="1.2em">7)</tspan>
-</text>
+<text x="0" y="-4" class="key tap">D</text>
+<text x="0" y="34" class="key hold"><tspan style="font-size: 88%">MOD_LGUI</tspan></text>
 </g>
 <g transform="translate(342, 209)" class="key keypos-28">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
 <rect rx="4" ry="4" x="-30" y="-34" width="60" height="60" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">TD(</tspan><tspan x="0" dy="1.2em">DANCE</tspan><tspan x="0" dy="1.2em">8)</tspan>
-</text>
+<text x="0" y="-4" class="key tap">F</text>
+<text x="0" y="34" class="key hold"><tspan style="font-size: 88%">MOD_LSFT</tspan></text>
 </g>
 <g transform="translate(418, 228)" class="key keypos-29">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
 <rect rx="4" ry="4" x="-30" y="-34" width="60" height="60" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">TD(</tspan><tspan x="0" dy="1.2em">DANCE</tspan><tspan x="0" dy="1.2em">9)</tspan>
-</text>
+<text x="0" y="-4" class="key tap">G</text>
 </g>
 <g transform="translate(798, 228)" class="key keypos-30">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
@@ -352,37 +336,33 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(114, 304)" class="key keypos-37">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
 <rect rx="4" ry="4" x="-30" y="-34" width="60" height="60" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">TD(</tspan><tspan x="0" dy="1.2em">DANCE</tspan><tspan x="0" dy="1.2em">10)</tspan>
-</text>
+<text x="0" y="-4" class="key tap">Z</text>
 </g>
 <g transform="translate(190, 285)" class="key keypos-38">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
 <rect rx="4" ry="4" x="-30" y="-34" width="60" height="60" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">TD(</tspan><tspan x="0" dy="1.2em">DANCE</tspan><tspan x="0" dy="1.2em">11)</tspan>
+<tspan x="0" dy="-1.2em">TD(</tspan><tspan x="0" dy="1.2em">DANCE</tspan><tspan x="0" dy="1.2em">0)</tspan>
 </text>
 </g>
 <g transform="translate(266, 266)" class="key keypos-39">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
 <rect rx="4" ry="4" x="-30" y="-34" width="60" height="60" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">TD(</tspan><tspan x="0" dy="1.2em">DANCE</tspan><tspan x="0" dy="1.2em">12)</tspan>
+<tspan x="0" dy="-1.2em">TD(</tspan><tspan x="0" dy="1.2em">DANCE</tspan><tspan x="0" dy="1.2em">1)</tspan>
 </text>
 </g>
 <g transform="translate(342, 285)" class="key keypos-40">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
 <rect rx="4" ry="4" x="-30" y="-34" width="60" height="60" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">TD(</tspan><tspan x="0" dy="1.2em">DANCE</tspan><tspan x="0" dy="1.2em">13)</tspan>
+<tspan x="0" dy="-1.2em">TD(</tspan><tspan x="0" dy="1.2em">DANCE</tspan><tspan x="0" dy="1.2em">2)</tspan>
 </text>
 </g>
 <g transform="translate(418, 304)" class="key keypos-41">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
 <rect rx="4" ry="4" x="-30" y="-34" width="60" height="60" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">TD(</tspan><tspan x="0" dy="1.2em">DANCE</tspan><tspan x="0" dy="1.2em">14)</tspan>
-</text>
+<text x="0" y="-4" class="key tap">B</text>
 </g>
 <g transform="translate(798, 304)" class="key keypos-42">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key side"/>
