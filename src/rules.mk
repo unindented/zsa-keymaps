@@ -13,3 +13,4 @@ SPACE_CADET_ENABLE = no
 # Custom stuff
 
 CAPS_WORD_ENABLE = yes
+KEY_OVERRIDE_ENABLE = yes
